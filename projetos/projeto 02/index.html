@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Lumière | Odontologia de Alto Padrão</title>
+  <meta name="description" content="Clínica odontológica premium com tecnologia de ponta, especialistas qualificados e atendimento humanizado. Implantes, ortodontia, Invisalign, facetas e mais. Agende sua avaliação." />
+  <meta name="keywords" content="dentista, clínica odontológica, implantes dentários, ortodontia, invisalign, facetas, clareamento, odontologia premium" />
+  <meta name="author" content="Clínica Lumière" />
+  <meta name="theme-color" content="#0f2a43" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Clínica Lumière | Odontologia de Alto Padrão" />
+  <meta property="og:description" content="Transforme seu sorriso com tecnologia de ponta e atendimento humanizado." />
+  <meta property="og:image" content="public/images/hero.png" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <link rel="icon" href="public/icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ================= TOP BAR ================= -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">Av. Paulista, 1842 — Bela Vista, São Paulo</span>
+      <span class="topbar__divider">•</span>
+      <span class="topbar__item">Seg a Sex 8h–20h · Sáb 8h–14h</span>
+      <a class="topbar__phone" href="tel:+551130000000">(11) 3000-0000</a>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="brand" aria-label="Clínica Lumière — início">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Lumière<small>ODONTOLOGIA</small></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="#agendar" class="btn btn--primary btn--sm">Agendar Avaliação</a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero__media">
+        <img src="public/images/hero.png" alt="Recepção moderna e elegante da Clínica Lumière" />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow eyebrow--light">Odontologia de alto padrão · desde 2009</p>
+        <h1 class="hero__title">
+          Um sorriso que transmite <em>confiança</em> começa com cuidado de verdade.
+        </h1>
+        <p class="hero__subtitle">
+          Unimos tecnologia digital de ponta, especialistas referência e um atendimento profundamente humano para transformar a sua saúde bucal — e a forma como você se enxerga.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#agendar" class="btn btn--primary">Agendar Avaliação</a>
+          <a href="https://wa.me/5511990000000" class="btn btn--ghost-light" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" class="icon-wa" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+
+        <div class="hero__badges">
+          <div class="badge">
+            <strong>+15</strong>
+            <span>anos de experiência</span>
+          </div>
+          <div class="badge__sep" aria-hidden="true"></div>
+          <div class="badge">
+            <strong>+28 mil</strong>
+            <span>pacientes atendidos</span>
+          </div>
+          <div class="badge__sep" aria-hidden="true"></div>
+          <div class="badge">
+            <strong>4,9 ★</strong>
+            <span>avaliação no Google</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SOBRE ================= -->
+    <section class="section sobre" id="sobre">
+      <div class="container sobre__grid">
+        <div class="sobre__media reveal">
+          <img src="public/images/about.png" alt="Equipe de dentistas da Clínica Lumière" />
+          <div class="sobre__media-tag">
+            <strong>CRO-SP 12.345</strong>
+            <span>Clínica regularizada e auditada</span>
+          </div>
+        </div>
+
+        <div class="sobre__text reveal">
+          <p class="eyebrow">Sobre a clínica</p>
+          <h2 class="title">Cuidamos de pessoas — sorrisos são apenas a consequência.</h2>
+          <p class="lead">
+            A Lumière nasceu em 2009 do desejo de oferecer uma odontologia diferente: precisa como a ciência exige e acolhedora como o paciente merece. Em mais de 15 anos, construímos uma referência em São Paulo unindo planejamento digital, materiais de excelência e uma escuta atenta.
+          </p>
+          <p class="body">
+            Cada tratamento começa por entender a sua história. Acreditamos que decisões clínicas só fazem sentido quando alinhadas à sua rotina, ao seu tempo e às suas expectativas. Essa é a base da relação de confiança que mantemos com milhares de famílias.
+          </p>
+
+          <div class="sobre__values">
+            <div class="value">
+              <h3>Missão</h3>
+              <p>Devolver saúde, função e autoestima por meio de uma odontologia previsível e humana.</p>
+            </div>
+            <div class="value">
+              <h3>Valores</h3>
+              <p>Ética, transparência, excelência técnica e respeito ao tempo de cada paciente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIFERENCIAIS ================= -->
+    <section class="section diferenciais" id="diferenciais">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Por que a Lumière</p>
+          <h2 class="title">Diferenciais que você sente em cada detalhe</h2>
+        </div>
+
+        <div class="diferenciais__grid">
+          <article class="dif reveal">
+            <span class="dif__num">01</span>
+            <h3>Tecnologia digital</h3>
+            <p>Scanner intraoral 3D, tomografia e planejamento guiado por software para diagnósticos precisos e sem suposições.</p>
+          </article>
+          <article class="dif reveal">
+            <span class="dif__num">02</span>
+            <h3>Atendimento humanizado</h3>
+            <p>Tempo de consulta adequado, escuta verdadeira e um plano explicado com clareza, sem pressa e sem pressão.</p>
+          </article>
+          <article class="dif reveal">
+            <span class="dif__num">03</span>
+            <h3>Especialistas qualificados</h3>
+            <p>Equipe com mestrado, doutorado e atualização contínua nas principais referências do Brasil e do exterior.</p>
+          </article>
+          <article class="dif reveal">
+            <span class="dif__num">04</span>
+            <h3>Ambiente confortável</h3>
+            <p>Espaços projetados para reduzir a ansiedade, com climatização, isolamento acústico e estética acolhedora.</p>
+          </article>
+          <article class="dif reveal">
+            <span class="dif__num">05</span>
+            <h3>Biossegurança rigorosa</h3>
+            <p>Protocolos de esterilização auditados e materiais de uso único, seguindo padrões hospitalares.</p>
+          </article>
+          <article class="dif reveal">
+            <span class="dif__num">06</span>
+            <h3>Resultados previsíveis</h3>
+            <p>Mock-ups e simulações digitais permitem visualizar o resultado antes de iniciar qualquer tratamento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ESPECIALIDADES ================= -->
+    <section class="section especialidades" id="especialidades">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Especialidades</p>
+          <h2 class="title">Tratamentos completos sob o mesmo cuidado</h2>
+          <p class="section__sub">Da prevenção à reabilitação estética, oferecemos um ecossistema de especialidades integradas em um só lugar.</p>
+        </div>
+
+        <div class="esp__grid">
+          <article class="esp reveal">
+            <h3>Implantes Dentários</h3>
+            <p>Reabilitação fixa e definitiva com planejamento guiado e implantes de marcas premium.</p>
+            <a href="#agendar" class="link-arrow">Saber mais</a>
+          </article>
+          <article class="esp reveal">
+            <h3>Ortodontia</h3>
+            <p>Alinhamento e correção da mordida com aparelhos estéticos e acompanhamento próximo.</p>
+            <a href="#agendar" class="link-arrow">Saber mais</a>
+          </article>
+          <article class="esp reveal">
+            <h3>Invisalign</h3>
+            <p>Alinhadores transparentes e removíveis para corrigir o sorriso com discrição total.</p>
+            <a href="#agendar" class="link-arrow">Saber mais</a>
+          </article>
+          <article class="esp reveal">
+            <h3>Facetas em Porcelana</h3>
+            <p>Desenho de sorriso personalizado com lentes de contato dental de alta naturalidade.</p>
+            <a href="#agendar" class="link-arrow">Saber mais</a>
+          </article>
+          <article class="esp reveal">
+            <h3>Clareamento Dental</h3>
+            <p>Protocolos seguros, em consultório ou supervisionado, para um branco natural e duradouro.</p>
+            <a href="#agendar" class="link-arrow">Saber mais</a>
+          </article>
+          <article class="esp reveal">
+            <h3>Endodontia</h3>
+            <p>Tratamento de canal com microscopia, preservando o dente com conforto e precisão.</p>
+            <a href="#agendar" class="link-arrow">Saber mais</a>
+          </article>
+          <article class="esp reveal">
+            <h3>Prótese Dentária</h3>
+            <p>Próteses fixas e estéticas que devolvem função mastigatória e harmonia ao sorriso.</p>
+            <a href="#agendar" class="link-arrow">Saber mais</a>
+          </article>
+          <article class="esp reveal">
+            <h3>Odontopediatria</h3>
+            <p>Cuidado lúdico e gentil para que as crianças construam uma relação positiva com o dentista.</p>
+            <a href="#agendar" class="link-arrow">Saber mais</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EQUIPE ================= -->
+    <section class="section equipe" id="equipe">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Nossa equipe</p>
+          <h2 class="title">Especialistas que assinam cada resultado</h2>
+        </div>
+
+        <div class="equipe__grid">
+          <article class="membro reveal">
+            <div class="membro__photo">
+              <img src="public/images/dentist-1.png" alt="Dra. Helena Castro, dentista" />
+            </div>
+            <div class="membro__info">
+              <h3>Dra. Helena Castro</h3>
+              <span class="membro__cro">CRO-SP 45.210 · Diretora Clínica</span>
+              <p class="membro__spec">Implantodontia &amp; Reabilitação Oral</p>
+              <p class="membro__bio">Mestre em Implantodontia pela USP, com mais de 4.000 implantes instalados e foco em reabilitações complexas.</p>
+            </div>
+          </article>
+
+          <article class="membro reveal">
+            <div class="membro__photo">
+              <img src="public/images/dentist-2.png" alt="Dr. Rafael Monteiro, dentista" />
+            </div>
+            <div class="membro__info">
+              <h3>Dr. Rafael Monteiro</h3>
+              <span class="membro__cro">CRO-SP 38.117 · Ortodontista</span>
+              <p class="membro__spec">Ortodontia &amp; Invisalign Diamond</p>
+              <p class="membro__bio">Especialista em Ortodontia e provider Invisalign Diamond, referência em alinhamento digital e estética.</p>
+            </div>
+          </article>
+
+          <article class="membro reveal">
+            <div class="membro__photo">
+              <img src="public/images/dentist-3.png" alt="Dra. Marina Lopes, dentista" />
+            </div>
+            <div class="membro__info">
+              <h3>Dra. Marina Lopes</h3>
+              <span class="membro__cro">CRO-SP 52.804 · Dentística</span>
+              <p class="membro__spec">Facetas &amp; Estética do Sorriso</p>
+              <p class="membro__bio">Especialista em Dentística Restauradora, dedicada ao desenho de sorrisos naturais com facetas em porcelana.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ANTES E DEPOIS ================= -->
+    <section class="section resultados" id="resultados">
+      <div class="container resultados__grid">
+        <div class="resultados__text reveal">
+          <p class="eyebrow">Antes &amp; Depois</p>
+          <h2 class="title">Resultados reais, transformações que falam por si</h2>
+          <p class="body">
+            Arraste a barra e veja a diferença. Cada caso é planejado digitalmente e executado com a precisão que um sorriso definitivo exige. Resultados de pacientes reais da Lumière.
+          </p>
+          <a href="#agendar" class="btn btn--dark">Quero a minha transformação</a>
+        </div>
+
+        <div class="compare reveal" id="compare">
+          <img class="compare__img compare__after" src="public/images/after.png" alt="Sorriso depois do tratamento" />
+          <div class="compare__before" id="compareBefore">
+            <img class="compare__img" src="public/images/before.png" alt="Sorriso antes do tratamento" />
+          </div>
+          <div class="compare__handle" id="compareHandle" role="slider" aria-label="Comparar antes e depois" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+            <span class="compare__line"></span>
+            <span class="compare__grip" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+            </span>
+          </div>
+          <span class="compare__tag compare__tag--before">Antes</span>
+          <span class="compare__tag compare__tag--after">Depois</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DEPOIMENTOS ================= -->
+    <section class="section depoimentos" id="depoimentos">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Depoimentos</p>
+          <h2 class="title">Quem confia, recomenda</h2>
+          <div class="rating">
+            <span class="rating__stars" aria-hidden="true">★★★★★</span>
+            <span class="rating__text"><strong>4,9</strong> de 5 · baseado em 1.247 avaliações no Google</span>
+          </div>
+        </div>
+
+        <div class="dep__grid">
+          <article class="dep reveal">
+            <span class="dep__stars" aria-hidden="true">★★★★★</span>
+            <p class="dep__quote">"Eu tinha pavor de dentista. Na Lumière, fui acolhida do início ao fim e finalmente fiz meus implantes. O resultado mudou minha vida."</p>
+            <div class="dep__author">
+              <img src="public/images/patient-1.png" alt="Foto da paciente Camila R." />
+              <div>
+                <strong>Camila Rodrigues</strong>
+                <span>Implantes &amp; Prótese</span>
+              </div>
+              <img class="dep__google" src="public/icon.svg" alt="" aria-hidden="true" />
+            </div>
+          </article>
+
+          <article class="dep reveal">
+            <span class="dep__stars" aria-hidden="true">★★★★★</span>
+            <p class="dep__quote">"Atendimento impecável e tecnologia que impressiona. Vi a simulação do meu sorriso antes de começar. Profissionais de altíssimo nível."</p>
+            <div class="dep__author">
+              <img src="public/images/patient-2.png" alt="Foto do paciente Eduardo M." />
+              <div>
+                <strong>Eduardo Martins</strong>
+                <span>Facetas em Porcelana</span>
+              </div>
+              <img class="dep__google" src="public/icon.svg" alt="" aria-hidden="true" />
+            </div>
+          </article>
+
+          <article class="dep reveal">
+            <span class="dep__stars" aria-hidden="true">★★★★★</span>
+            <p class="dep__quote">"Fiz Invisalign e o acompanhamento foi excepcional. Equipe atenciosa, ambiente lindo e resultado exatamente como prometido."</p>
+            <div class="dep__author">
+              <img src="public/images/patient-3.png" alt="Foto da paciente Beatriz S." />
+              <div>
+                <strong>Beatriz Souza</strong>
+                <span>Invisalign</span>
+              </div>
+              <img class="dep__google" src="public/icon.svg" alt="" aria-hidden="true" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ESTRUTURA ================= -->
+    <section class="section estrutura" id="estrutura">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Nossa estrutura</p>
+          <h2 class="title">Um ambiente pensado para o seu conforto</h2>
+        </div>
+
+        <div class="estrutura__grid">
+          <figure class="estrutura__item estrutura__item--lg reveal">
+            <img src="public/images/structure-reception.png" alt="Recepção da clínica" />
+            <figcaption>Recepção &amp; espera</figcaption>
+          </figure>
+          <figure class="estrutura__item reveal">
+            <img src="public/images/structure-office.png" alt="Consultório odontológico moderno" />
+            <figcaption>Consultórios</figcaption>
+          </figure>
+          <figure class="estrutura__item reveal">
+            <img src="public/images/structure-equipment.png" alt="Equipamentos de diagnóstico digital" />
+            <figcaption>Diagnóstico digital</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div class="faq__head reveal">
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2 class="title">Tudo o que você precisa saber</h2>
+          <p class="body">Não encontrou sua resposta? Fale com a nossa equipe pelo WhatsApp — respondemos rápido.</p>
+          <a href="https://wa.me/5511990000000" target="_blank" rel="noopener" class="btn btn--dark">Tirar dúvidas no WhatsApp</a>
+        </div>
+
+        <div class="faq__list reveal">
+          <details class="faq__item">
+            <summary>Como funciona a primeira avaliação?</summary>
+            <p>Na primeira consulta realizamos exame clínico, escaneamento e, quando necessário, exames de imagem. Em seguida, apresentamos um plano de tratamento detalhado, com valores e etapas, sem nenhum compromisso.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Quais formas de pagamento vocês aceitam?</summary>
+            <p>Trabalhamos com PIX, cartões de crédito em até 12x, financiamento odontológico e condições especiais para tratamentos completos. Tudo é apresentado de forma transparente antes do início.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Vocês atendem convênios?</summary>
+            <p>Atendemos os principais convênios odontológicos e também oferecemos reembolso facilitado. Consulte nossa equipe para verificar o seu plano específico.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Os tratamentos doem?</summary>
+            <p>Utilizamos técnicas modernas de anestesia e protocolos focados no conforto. A grande maioria dos procedimentos é indolor, e nossa equipe acompanha você em cada etapa.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Quanto tempo leva um tratamento com Invisalign?</summary>
+            <p>O tempo varia conforme cada caso, geralmente entre 6 e 18 meses. Na avaliação, mostramos a simulação digital com a previsão do seu resultado final.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Posso ver o resultado antes de começar?</summary>
+            <p>Sim. Para tratamentos estéticos como facetas e ortodontia, utilizamos planejamento digital e mock-ups para que você visualize o resultado antes de qualquer procedimento definitivo.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="cta" id="agendar">
+      <div class="container cta__inner reveal">
+        <p class="eyebrow eyebrow--light">Dê o primeiro passo</p>
+        <h2 class="cta__title">O seu melhor sorriso merece começar hoje.</h2>
+        <p class="cta__text">
+          Agende uma avaliação e descubra, com clareza e sem compromisso, o caminho para transformar a sua saúde bucal. Cuidamos de você como gostaríamos de ser cuidados.
+        </p>
+        <div class="cta__actions">
+          <a href="https://wa.me/5511990000000" target="_blank" rel="noopener" class="btn btn--whatsapp">
+            <svg viewBox="0 0 24 24" class="icon-wa" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a href="tel:+551130000000" class="btn btn--ghost-light">Ligar agora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#hero" class="brand brand--footer">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Lumière<small>ODONTOLOGIA</small></span>
+        </a>
+        <p>Odontologia de alto padrão com tecnologia, ética e acolhimento. Transformando sorrisos em São Paulo desde 2009.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2a3.7 3.7 0 01-.9 1.4 3.7 3.7 0 01-1.4.9c-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4a3.7 3.7 0 01-1.4-.9 3.7 3.7 0 01-.9-1.4c-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2a3.7 3.7 0 01.9-1.4 3.7 3.7 0 011.4-.9c.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-.9 0-1.4.2-1.7.3-.4.2-.7.4-1 .7-.3.3-.5.6-.7 1-.1.3-.3.8-.3 1.7-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c0 .9.2 1.4.3 1.7.2.4.4.7.7 1 .3.3.6.5 1 .7.3.1.8.3 1.7.3 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c.9 0 1.4-.2 1.7-.3.4-.2.7-.4 1-.7.3-.3.5-.6.7-1 .1-.3.3-.8.3-1.7.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c0-.9-.2-1.4-.3-1.7a2.7 2.7 0 00-.7-1 2.7 2.7 0 00-1-.7c-.3-.1-.8-.3-1.7-.3-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 110 9.8 4.9 4.9 0 010-9.8zm0 8a3.1 3.1 0 100-6.2 3.1 3.1 0 000 6.2zm6.3-8.2a1.15 1.15 0 11-2.3 0 1.15 1.15 0 012.3 0z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 10-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="https://wa.me/5511990000000" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul>
+          <li>Av. Paulista, 1842 — Bela Vista</li>
+          <li>São Paulo · SP · 01310-200</li>
+          <li><a href="tel:+551130000000">(11) 3000-0000</a></li>
+          <li><a href="https://wa.me/5511990000000" target="_blank" rel="noopener">(11) 99000-0000 · WhatsApp</a></li>
+          <li><a href="mailto:contato@clinicalumiere.com.br">contato@clinicalumiere.com.br</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Horário</h4>
+        <ul>
+          <li>Segunda a Sexta · 8h às 20h</li>
+          <li>Sábado · 8h às 14h</li>
+          <li>Domingo · Fechado</li>
+        </ul>
+        <h4 class="footer__col-title2">Navegação</h4>
+        <ul class="footer__nav">
+          <li><a href="#especialidades">Especialidades</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#faq">Dúvidas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__map">
+        <iframe
+          title="Mapa da Clínica Lumière"
+          src="https://www.google.com/maps?q=Avenida+Paulista+1842+São+Paulo&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <span>© <span id="year"></span> Clínica Lumière Odontologia. Todos os direitos reservados.</span>
+        <span>Responsável Técnica: Dra. Helena Castro · CRO-SP 45.210</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/5511990000000" class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

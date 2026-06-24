@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professor de Redação | Aprovação no ENEM e Vestibulares</title>
+  <meta name="description" content="Método prático e validado para escrever redações nota 900+ e conquistar sua aprovação no ENEM, vestibulares e concursos." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#0F172A',
+            brand: '#2563EB',
+            light: '#F8FAFC',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="bg-light text-ink font-sans antialiased">
+
+  <!-- ===================== HEADER ===================== -->
+  <header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between rounded-2xl glass mt-3 px-4 sm:px-6">
+        <a href="#inicio" class="flex items-center gap-2 font-extrabold text-lg">
+          <span class="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white shadow-lg shadow-brand/30">
+            <i data-lucide="pen-line" class="h-5 w-5"></i>
+          </span>
+          <span>Prof. <span class="text-brand">Redação</span></span>
+        </a>
+
+        <ul class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-600">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#curso" class="nav-link">Curso</a></li>
+          <li><a href="#resultados" class="nav-link">Resultados</a></li>
+          <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+
+        <div class="flex items-center gap-3">
+          <a href="#oferta" class="hidden sm:inline-flex btn-primary text-sm">Quero ser aprovado</a>
+          <button id="menuToggle" class="lg:hidden grid h-10 w-10 place-items-center rounded-xl bg-white/70 text-ink" aria-label="Abrir menu">
+            <i data-lucide="menu" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobileMenu" class="lg:hidden hidden mt-2 glass rounded-2xl p-4">
+        <ul class="flex flex-col gap-1 text-sm font-medium text-slate-700">
+          <li><a href="#inicio" class="mobile-link">Início</a></li>
+          <li><a href="#curso" class="mobile-link">Curso</a></li>
+          <li><a href="#resultados" class="mobile-link">Resultados</a></li>
+          <li><a href="#depoimentos" class="mobile-link">Depoimentos</a></li>
+          <li><a href="#sobre" class="mobile-link">Sobre</a></li>
+          <li><a href="#contato" class="mobile-link">Contato</a></li>
+          <li class="pt-2"><a href="#oferta" class="btn-primary w-full justify-center">Quero ser aprovado</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="inicio" class="relative overflow-hidden bg-ink text-white pt-32 pb-20 lg:pt-40 lg:pb-28">
+    <div class="hero-glow"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-reveal>
+          <span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-sm text-blue-200">
+            <i data-lucide="sparkles" class="h-4 w-4"></i> Método validado por centenas de alunos
+          </span>
+          <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-balance">
+            Aprenda a escrever redações <span class="text-gradient">nota 900+</span> e conquiste sua aprovação
+          </h1>
+          <p class="mt-6 text-lg text-slate-300 leading-relaxed max-w-xl">
+            Método prático e validado que já ajudou centenas de alunos a melhorarem suas notas no ENEM e vestibulares.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-4">
+            <a href="#oferta" class="btn-primary text-base">Quero entrar para o curso</a>
+            <a href="#resultados" class="btn-ghost text-base">Ver resultados dos alunos</a>
+          </div>
+
+          <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="indicator"><i data-lucide="users" class="h-5 w-5 text-brand"></i><span>500+ alunos</span></div>
+            <div class="indicator"><i data-lucide="thumbs-up" class="h-5 w-5 text-brand"></i><span>95% satisfação</span></div>
+            <div class="indicator"><i data-lucide="lightbulb" class="h-5 w-5 text-brand"></i><span>Metodologia própria</span></div>
+            <div class="indicator"><i data-lucide="headset" class="h-5 w-5 text-brand"></i><span>Suporte personalizado</span></div>
+          </div>
+        </div>
+
+        <div class="relative" data-reveal>
+          <div class="absolute -inset-4 rounded-[2rem] bg-brand/20 blur-2xl"></div>
+          <img src="images/professor-corrigindo.png" alt="Professor corrigindo redações em sua mesa de trabalho"
+               class="relative rounded-[2rem] shadow-2xl ring-1 ring-white/10 w-full object-cover" />
+          <div class="absolute -bottom-6 -left-6 glass-dark rounded-2xl p-4 shadow-xl float-card hidden sm:block">
+            <div class="flex items-center gap-3">
+              <div class="grid h-11 w-11 place-items-center rounded-xl bg-brand text-white"><i data-lucide="award" class="h-6 w-6"></i></div>
+              <div>
+                <p class="text-2xl font-extrabold leading-none">980</p>
+                <p class="text-xs text-slate-300">nota máxima atingida</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROBLEMAS ===================== -->
+  <section class="py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto" data-reveal>
+        <h2 class="section-title">Você enfrenta algum desses desafios?</h2>
+        <p class="section-sub">Identifique o que está travando a sua evolução na redação.</p>
+      </div>
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="problem-card" data-reveal><i data-lucide="layout-template"></i><h3>Não sabe estruturar a redação</h3><p>Você escreve, mas sente que falta organização e clareza nas ideias.</p></div>
+        <div class="problem-card" data-reveal><i data-lucide="circle-x"></i><h3>Perde pontos por erros simples</h3><p>Pequenos deslizes de gramática e coesão derrubam a sua nota.</p></div>
+        <div class="problem-card" data-reveal><i data-lucide="message-square-warning"></i><h3>Tem dificuldade em argumentar</h3><p>Falta repertório e técnica para defender seu ponto de vista.</p></div>
+        <div class="problem-card" data-reveal><i data-lucide="trending-down"></i><h3>Nunca sai da mesma nota</h3><p>Por mais que estude, sua nota parece estagnada há meses.</p></div>
+        <div class="problem-card" data-reveal><i data-lucide="frown"></i><h3>Falta confiança para escrever</h3><p>O medo da folha em branco trava o seu desempenho na prova.</p></div>
+        <div class="problem-card highlight" data-reveal><i data-lucide="arrow-right-circle"></i><h3>A boa notícia</h3><p>Todos esses problemas têm solução com o método certo. Continue lendo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOLUÇÃO (TIMELINE) ===================== -->
+  <section class="py-20 lg:py-28 bg-ink text-white relative overflow-hidden">
+    <div class="hero-glow opacity-60"></div>
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 relative">
+      <div class="text-center max-w-2xl mx-auto" data-reveal>
+        <h2 class="section-title text-white">Foi por isso que criamos este método</h2>
+        <p class="section-sub text-slate-300">Um passo a passo claro que transforma a sua escrita.</p>
+      </div>
+
+      <div class="mt-16 relative timeline">
+        <div class="timeline-item" data-reveal><span class="t-num">1</span><div class="t-content"><h3>Estrutura perfeita</h3><p>Domine o esqueleto da redação nota 1000, do começo ao fim.</p></div></div>
+        <div class="timeline-item" data-reveal><span class="t-num">2</span><div class="t-content"><h3>Argumentação inteligente</h3><p>Aprenda a defender suas ideias com lógica e profundidade.</p></div></div>
+        <div class="timeline-item" data-reveal><span class="t-num">3</span><div class="t-content"><h3>Repertório sociocultural</h3><p>Tenha um arsenal de referências para qualquer tema.</p></div></div>
+        <div class="timeline-item" data-reveal><span class="t-num">4</span><div class="t-content"><h3>Correção detalhada</h3><p>Receba feedback comentado para evoluir a cada texto.</p></div></div>
+        <div class="timeline-item" data-reveal><span class="t-num">5</span><div class="t-content"><h3>Treinamento contínuo</h3><p>Pratique com temas atualizados até a sua aprovação.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE O CURSO ===================== -->
+  <section id="curso" class="py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto" data-reveal>
+        <h2 class="section-title">O que você vai aprender</h2>
+        <p class="section-sub">Um currículo completo para dominar a redação do início ao fim.</p>
+      </div>
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="learn-card" data-reveal><i data-lucide="file-text"></i><h3>Estrutura completa ENEM</h3></div>
+        <div class="learn-card" data-reveal><i data-lucide="flag"></i><h3>Introduções que impressionam</h3></div>
+        <div class="learn-card" data-reveal><i data-lucide="layers"></i><h3>Desenvolvimento nota máxima</h3></div>
+        <div class="learn-card" data-reveal><i data-lucide="check-check"></i><h3>Conclusões perfeitas</h3></div>
+        <div class="learn-card" data-reveal><i data-lucide="library"></i><h3>Repertório sociocultural</h3></div>
+        <div class="learn-card" data-reveal><i data-lucide="brain"></i><h3>Técnicas de argumentação</h3></div>
+        <div class="learn-card" data-reveal><i data-lucide="message-square-text"></i><h3>Correção comentada</h3></div>
+        <div class="learn-card" data-reveal><i data-lucide="calendar-clock"></i><h3>Banco de temas atualizados</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESULTADOS ===================== -->
+  <section id="resultados" class="py-20 lg:py-28 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto" data-reveal>
+        <h2 class="section-title">Resultados que falam por si</h2>
+        <p class="section-sub">Notas reais conquistadas por alunos do método.</p>
+      </div>
+
+      <div class="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="score-card" data-reveal><p class="score">980</p><p>Maria S.</p></div>
+        <div class="score-card" data-reveal><p class="score">960</p><p>João P.</p></div>
+        <div class="score-card" data-reveal><p class="score">940</p><p>Ana L.</p></div>
+        <div class="score-card" data-reveal><p class="score">920</p><p>Pedro H.</p></div>
+        <div class="score-card" data-reveal><p class="score">900</p><p>Carla M.</p></div>
+      </div>
+
+      <!-- Gráfico de evolução -->
+      <div class="mt-16 rounded-3xl bg-light p-6 sm:p-10 ring-1 ring-slate-200" data-reveal>
+        <h3 class="text-xl font-bold mb-1">Evolução média dos alunos</h3>
+        <p class="text-slate-500 text-sm mb-8">Da primeira até a última redação do curso.</p>
+        <div class="chart">
+          <div class="bar" style="--h: 40%"><span class="bar-val">600</span><span class="bar-label">Início</span></div>
+          <div class="bar" style="--h: 55%"><span class="bar-val">680</span><span class="bar-label">Mês 1</span></div>
+          <div class="bar" style="--h: 68%"><span class="bar-val">760</span><span class="bar-label">Mês 2</span></div>
+          <div class="bar" style="--h: 82%"><span class="bar-val">860</span><span class="bar-label">Mês 3</span></div>
+          <div class="bar" style="--h: 95%"><span class="bar-val">940</span><span class="bar-label">Final</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEPOIMENTOS ===================== -->
+  <section id="depoimentos" class="py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto" data-reveal>
+        <h2 class="section-title">O que dizem os alunos</h2>
+        <p class="section-sub">Histórias reais de quem transformou a própria escrita.</p>
+      </div>
+
+      <div class="mt-14 relative" data-reveal>
+        <div id="carousel" class="overflow-hidden">
+          <div id="track" class="flex transition-transform duration-500 ease-out">
+            <div class="slide"><div class="testimonial"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>"Saí de 680 para 940 em poucos meses. O método é simplesmente transformador."</p><div class="author"><span class="avatar">MS</span><div><strong>Maria Souza</strong><small>Aprovada em Medicina</small></div></div></div></div>
+            <div class="slide"><div class="testimonial"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>"Nunca imaginei que conseguiria uma nota tão alta. As aulas são diretas e práticas."</p><div class="author"><span class="avatar">JP</span><div><strong>João Pereira</strong><small>Aprovado em Direito</small></div></div></div></div>
+            <div class="slide"><div class="testimonial"><div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><p>"As correções mudaram completamente minha forma de escrever. Recomendo demais!"</p><div class="author"><span class="avatar">AL</span><div><strong>Ana Lima</strong><small>Aprovada em Engenharia</small></div></div></div></div>
+          </div>
+        </div>
+        <div class="mt-8 flex items-center justify-center gap-4">
+          <button id="prevBtn" class="carousel-btn" aria-label="Anterior"><i data-lucide="chevron-left"></i></button>
+          <div id="dots" class="flex gap-2"></div>
+          <button id="nextBtn" class="carousel-btn" aria-label="Próximo"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SOBRE O PROFESSOR ===================== -->
+  <section id="sobre" class="py-20 lg:py-28 bg-ink text-white relative overflow-hidden">
+    <div class="hero-glow opacity-50"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="relative order-2 lg:order-1" data-reveal>
+          <div class="absolute -inset-4 rounded-[2rem] bg-brand/20 blur-2xl"></div>
+          <img src="images/professor-retrato.png" alt="Retrato profissional do professor de redação"
+               class="relative rounded-[2rem] shadow-2xl ring-1 ring-white/10 w-full max-w-md mx-auto object-cover" />
+        </div>
+        <div class="order-1 lg:order-2" data-reveal>
+          <h2 class="section-title text-white">Quem será seu mentor</h2>
+          <p class="mt-4 text-slate-300 leading-relaxed">
+            Especialista em redação para ENEM, vestibulares e concursos, com uma metodologia própria
+            criada a partir de anos de experiência em sala de aula e correção de milhares de textos.
+          </p>
+          <div class="mt-8 grid sm:grid-cols-2 gap-5">
+            <div class="about-stat"><i data-lucide="calendar"></i><div><strong>+10 anos</strong><span>de experiência</span></div></div>
+            <div class="about-stat"><i data-lucide="graduation-cap"></i><div><strong>Especialista</strong><span>em redação</span></div></div>
+            <div class="about-stat"><i data-lucide="users"></i><div><strong>Centenas</strong><span>de aprovados</span></div></div>
+            <div class="about-stat"><i data-lucide="lightbulb"></i><div><strong>Método próprio</strong><span>e validado</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto" data-reveal>
+        <h2 class="section-title">Diferenciais do curso</h2>
+        <p class="section-sub">Tudo que você precisa para evoluir com segurança.</p>
+      </div>
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="diff-card" data-reveal><i data-lucide="check-circle-2"></i><h3>Correções personalizadas</h3></div>
+        <div class="diff-card" data-reveal><i data-lucide="check-circle-2"></i><h3>Aulas gravadas</h3></div>
+        <div class="diff-card" data-reveal><i data-lucide="check-circle-2"></i><h3>Atualizações constantes</h3></div>
+        <div class="diff-card" data-reveal><i data-lucide="check-circle-2"></i><h3>Suporte direto</h3></div>
+        <div class="diff-card" data-reveal><i data-lucide="check-circle-2"></i><h3>Temas inéditos</h3></div>
+        <div class="diff-card" data-reveal><i data-lucide="check-circle-2"></i><h3>Comunidade exclusiva</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OFERTA ===================== -->
+  <section id="oferta" class="py-20 lg:py-28 bg-light">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto" data-reveal>
+        <h2 class="section-title">Garanta sua vaga hoje</h2>
+        <p class="section-sub">Acesso completo ao método que aprova.</p>
+      </div>
+
+      <div class="mt-12 offer-card" data-reveal>
+        <div class="offer-glow"></div>
+        <span class="inline-flex items-center gap-2 rounded-full bg-brand/10 text-brand px-4 py-1.5 text-sm font-semibold">
+          <i data-lucide="zap" class="h-4 w-4"></i> Curso completo de redação
+        </span>
+        <ul class="mt-8 space-y-4 text-left">
+          <li class="offer-item"><i data-lucide="check"></i> Todas as aulas</li>
+          <li class="offer-item"><i data-lucide="check"></i> Correções de redação</li>
+          <li class="offer-item"><i data-lucide="check"></i> Material complementar</li>
+          <li class="offer-item"><i data-lucide="check"></i> Atualizações futuras</li>
+          <li class="offer-item"><i data-lucide="check"></i> Certificado de conclusão</li>
+        </ul>
+        <div class="mt-8 text-center">
+          <p class="text-slate-400 text-sm line-through">de R$ 997</p>
+          <p class="text-5xl font-extrabold text-ink">12x R$ 49<span class="text-2xl align-top">,90</span></p>
+          <p class="text-slate-500 text-sm mt-1">ou R$ 497 à vista</p>
+        </div>
+        <a href="#contato" class="btn-primary w-full justify-center mt-8 text-base py-4">Quero me inscrever agora</a>
+        <p class="mt-4 text-center text-xs text-slate-500 flex items-center justify-center gap-1.5">
+          <i data-lucide="shield-check" class="h-4 w-4 text-brand"></i> Garantia incondicional de 7 dias
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="py-20 lg:py-28">
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto" data-reveal>
+        <h2 class="section-title">Perguntas frequentes</h2>
+        <p class="section-sub">Tire suas principais dúvidas antes de começar.</p>
+      </div>
+      <div class="mt-12 space-y-4" id="faq">
+        <div class="faq-item" data-reveal><button class="faq-q">O curso serve para iniciantes?<i data-lucide="plus"></i></button><div class="faq-a"><p>Sim! O método foi pensado para levar você do zero até a nota máxima, passo a passo.</p></div></div>
+        <div class="faq-item" data-reveal><button class="faq-q">Quantas correções estão inclusas?<i data-lucide="plus"></i></button><div class="faq-a"><p>Você terá correções personalizadas e comentadas durante todo o período de acesso ao curso.</p></div></div>
+        <div class="faq-item" data-reveal><button class="faq-q">Funciona para vestibulares?<i data-lucide="plus"></i></button><div class="faq-a"><p>Com certeza. O conteúdo cobre ENEM, principais vestibulares e concursos públicos.</p></div></div>
+        <div class="faq-item" data-reveal><button class="faq-q">Quanto tempo tenho acesso?<i data-lucide="plus"></i></button><div class="faq-a"><p>O acesso é prolongado e inclui todas as atualizações futuras do curso.</p></div></div>
+        <div class="faq-item" data-reveal><button class="faq-q">Possui garantia?<i data-lucide="plus"></i></button><div class="faq-a"><p>Sim, você tem 7 dias de garantia incondicional. Se não gostar, devolvemos seu dinheiro.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="py-20 lg:py-28 bg-ink text-white relative overflow-hidden">
+    <div class="hero-glow"></div>
+    <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center relative" data-reveal>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-balance">
+        Seu próximo texto pode ser o que garante sua <span class="text-gradient">aprovação</span>
+      </h2>
+      <a href="#oferta" class="btn-primary mt-10 text-base py-4 px-10">Começar agora</a>
+    </div>
+  </section>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer id="contato" class="bg-ink text-slate-300 border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid md:grid-cols-3 gap-10">
+        <div>
+          <a href="#inicio" class="flex items-center gap-2 font-extrabold text-lg text-white">
+            <span class="grid h-9 w-9 place-items-center rounded-xl bg-brand text-white"><i data-lucide="pen-line" class="h-5 w-5"></i></span>
+            Prof. Redação
+          </a>
+          <p class="mt-4 text-sm text-slate-400 max-w-xs">Método prático e validado para você conquistar a nota dos seus sonhos na redação.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contato</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="https://wa.me/5500000000000" class="footer-link"><i data-lucide="message-circle" class="h-4 w-4"></i> WhatsApp</a></li>
+            <li><a href="mailto:contato@profredacao.com" class="footer-link"><i data-lucide="mail" class="h-4 w-4"></i> contato@profredacao.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-4">Redes sociais</h4>
+          <div class="flex gap-3">
+            <a href="#" class="social"><i data-lucide="instagram" class="h-5 w-5"></i></a>
+            <a href="#" class="social"><i data-lucide="youtube" class="h-5 w-5"></i></a>
+            <a href="#" class="social"><i data-lucide="facebook" class="h-5 w-5"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 text-center text-sm text-slate-500">
+        © 2026 Professor de Redação. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5500000000000" class="whatsapp-float" aria-label="Falar no WhatsApp">
+    <i data-lucide="message-circle" class="h-7 w-7"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>

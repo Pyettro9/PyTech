@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarMax Energia | Liderança em Energia Solar</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBlue: '#0F172A',
+                        solarYellow: '#FBBF24',
+                        lightGray: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .bg-hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white font-sans text-slate-800">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 glass-header border-b border-slate-700">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-solarYellow rounded-lg flex items-center justify-center text-darkBlue font-bold text-2xl">S</div>
+                <span class="text-white text-2xl font-extrabold tracking-tighter">SolarMax<span class="text-solarYellow">Energia</span></span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-white/90">
+                <a href="#inicio" class="hover:text-solarYellow transition">Início</a>
+                <a href="#solucoes" class="hover:text-solarYellow transition">Soluções</a>
+                <a href="#beneficios" class="hover:text-solarYellow transition">Benefícios</a>
+                <a href="#projetos" class="hover:text-solarYellow transition">Projetos</a>
+                <a href="#sobre" class="hover:text-solarYellow transition">Sobre Nós</a>
+                <a href="#faq" class="hover:text-solarYellow transition">FAQ</a>
+            </div>
+
+            <a href="#contato" class="hidden md:block bg-solarYellow text-darkBlue px-6 py-2.5 rounded-full font-bold hover:bg-white transition duration-300">
+                Solicitar Orçamento
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-white text-2xl"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="bg-hero min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <span class="text-solarYellow font-bold tracking-widest uppercase text-sm">Tecnologia Sustentável</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mt-4">
+                    Economize até <span class="text-solarYellow">95%</span> na sua conta de energia
+                </h1>
+                <p class="text-white/80 text-xl mt-6 mb-10 max-w-lg leading-relaxed">
+                    Projetos personalizados de alta performance para residências, empresas, fazendas e indústrias.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contato" class="bg-solarYellow text-darkBlue px-8 py-4 rounded-lg font-bold text-center hover:scale-105 transition transform">Solicitar Orçamento</a>
+                    <a href="#simulador" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-center hover:bg-white hover:text-darkBlue transition transform">Simular Economia</a>
+                </div>
+                
+                <!-- Stats Indicators -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-16 border-t border-white/20 pt-8">
+                    <div>
+                        <p class="text-solarYellow text-3xl font-bold">+500</p>
+                        <p class="text-white/60 text-xs uppercase tracking-wider">Projetos Instalados</p>
+                    </div>
+                    <div>
+                        <p class="text-solarYellow text-3xl font-bold">+10</p>
+                        <p class="text-white/60 text-xs uppercase tracking-wider">Anos de Experiência</p>
+                    </div>
+                    <div>
+                        <p class="text-solarYellow text-3xl font-bold">+5 MW</p>
+                        <p class="text-white/60 text-xs uppercase tracking-wider">Gerados</p>
+                    </div>
+                    <div>
+                        <p class="text-solarYellow text-3xl font-bold">98%</p>
+                        <p class="text-white/60 text-xs uppercase tracking-wider">Satisfação</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="py-24 bg-lightGray">
+        <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-darkBlue mb-4">Por que escolher a SolarMax?</h2>
+            <div class="w-24 h-1.5 bg-solarYellow mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-8">
+            <div data-aos="fade-up" class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                <div class="w-16 h-16 bg-solarYellow/10 text-solarYellow rounded-full flex items-center justify-center text-3xl mb-6">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <h3 class="text-xl font-bold text-darkBlue mb-3">Economia Imediata</h3>
+                <p class="text-slate-500">Reduza drasticamente o valor da sua conta de energia logo no primeiro mês.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                <div class="w-16 h-16 bg-solarYellow/10 text-solarYellow rounded-full flex items-center justify-center text-3xl mb-6">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3 class="text-xl font-bold text-darkBlue mb-3">Sustentabilidade</h3>
+                <p class="text-slate-500">Produza energia limpa, renovável e ajude ativamente o meio ambiente.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                <div class="w-16 h-16 bg-solarYellow/10 text-solarYellow rounded-full flex items-center justify-center text-3xl mb-6">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold text-darkBlue mb-3">Valorização</h3>
+                <p class="text-slate-500">Aumente o valor de mercado da sua propriedade residencial ou comercial.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-8 rounded-2xl shadow-sm card-hover">
+                <div class="w-16 h-16 bg-solarYellow/10 text-solarYellow rounded-full flex items-center justify-center text-3xl mb-6">
+                    <i class="fas fa-battery-full"></i>
+                </div>
+                <h3 class="text-xl font-bold text-darkBlue mb-3">Independência</h3>
+                <p class="text-slate-500">Proteja-se contra os aumentos constantes da tarifa elétrica no Brasil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona -->
+    <section class="py-24 bg-darkBlue text-white overflow-hidden">
+        <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-extrabold mb-4">Como funciona a transição</h2>
+            <p class="text-slate-400">Processo rápido, transparente e sem burocracia.</p>
+        </div>
+        
+        <div class="container mx-auto px-6 grid md:grid-cols-5 gap-4 relative">
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-solarYellow/20 -z-10"></div>
+            <!-- Etapas -->
+            <div class="text-center group" data-aos="zoom-in">
+                <div class="w-12 h-12 bg-solarYellow text-darkBlue rounded-full flex items-center justify-center font-bold mx-auto mb-4 border-4 border-darkBlue group-hover:scale-110 transition">1</div>
+                <h4 class="font-bold mb-2">Orçamento</h4>
+                <p class="text-xs text-slate-400">Análise gratuita e consultoria inicial.</p>
+            </div>
+            <div class="text-center group" data-aos="zoom-in" data-aos-delay="100">
+                <div class="w-12 h-12 bg-solarYellow text-darkBlue rounded-full flex items-center justify-center font-bold mx-auto mb-4 border-4 border-darkBlue group-hover:scale-110 transition">2</div>
+                <h4 class="font-bold mb-2">Análise de Consumo</h4>
+                <p class="text-xs text-slate-400">Estudo técnico da sua fatura atual.</p>
+            </div>
+            <div class="text-center group" data-aos="zoom-in" data-aos-delay="200">
+                <div class="w-12 h-12 bg-solarYellow text-darkBlue rounded-full flex items-center justify-center font-bold mx-auto mb-4 border-4 border-darkBlue group-hover:scale-110 transition">3</div>
+                <h4 class="font-bold mb-2">Projeto</h4>
+                <p class="text-xs text-slate-400">Engenharia personalizada para seu telhado.</p>
+            </div>
+            <div class="text-center group" data-aos="zoom-in" data-aos-delay="300">
+                <div class="w-12 h-12 bg-solarYellow text-darkBlue rounded-full flex items-center justify-center font-bold mx-auto mb-4 border-4 border-darkBlue group-hover:scale-110 transition">4</div>
+                <h4 class="font-bold mb-2">Instalação</h4>
+                <p class="text-xs text-slate-400">Mão de obra qualificada e homologação.</p>
+            </div>
+            <div class="text-center group" data-aos="zoom-in" data-aos-delay="400">
+                <div class="w-12 h-12 bg-solarYellow text-darkBlue rounded-full flex items-center justify-center font-bold mx-auto mb-4 border-4 border-darkBlue group-hover:scale-110 transition">5</div>
+                <h4 class="font-bold mb-2">Economia</h4>
+                <p class="text-xs text-slate-400">Geração ativada e custos reduzidos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soluções -->
+    <section id="solucoes" class="py-24 bg-white">
+        <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-darkBlue mb-4">Soluções para todos os perfis</h2>
+            <div class="w-24 h-1.5 bg-solarYellow mx-auto rounded-full"></div>
+        </div>
+
+        <div class="container mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card Solução -->
+            <div class="group overflow-hidden rounded-2xl border border-slate-200 shadow-md transition hover:shadow-xl">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1558444479-c848261286a0?auto=format&fit=crop&w=500&q=80" alt="Residencial" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">Residencial</h3>
+                    <p class="text-slate-500 text-sm mb-4">Mais conforto e liberdade energética para sua família.</p>
+                    <button class="text-solarYellow font-bold flex items-center space-x-2 group-hover:translate-x-2 transition">
+                        <span>Saiba Mais</span> <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Card Solução -->
+            <div class="group overflow-hidden rounded-2xl border border-slate-200 shadow-md transition hover:shadow-xl">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80" alt="Empresarial" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">Empresarial</h3>
+                    <p class="text-slate-500 text-sm mb-4">Aumente a margem de lucro reduzindo custos fixos de energia.</p>
+                    <button class="text-solarYellow font-bold flex items-center space-x-2 group-hover:translate-x-2 transition">
+                        <span>Saiba Mais</span> <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Card Solução -->
+            <div class="group overflow-hidden rounded-2xl border border-slate-200 shadow-md transition hover:shadow-xl">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=500&q=80" alt="Rural" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">Rural</h3>
+                    <p class="text-slate-500 text-sm mb-4">Tecnologia no campo para irrigação e produção intensiva.</p>
+                    <button class="text-solarYellow font-bold flex items-center space-x-2 group-hover:translate-x-2 transition">
+                        <span>Saiba Mais</span> <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Card Solução -->
+            <div class="group overflow-hidden rounded-2xl border border-slate-200 shadow-md transition hover:shadow-xl">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=500&q=80" alt="Industrial" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-darkBlue mb-2">Industrial</h3>
+                    <p class="text-slate-500 text-sm mb-4">Projetos de alta escala para grandes plantas industriais.</p>
+                    <button class="text-solarYellow font-bold flex items-center space-x-2 group-hover:translate-x-2 transition">
+                        <span>Saiba Mais</span> <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simulador -->
+    <section id="simulador" class="py-24 bg-lightGray">
+        <div class="container mx-auto px-6">
+            <div class="bg-darkBlue rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 p-10 lg:p-16 text-white">
+                    <h2 class="text-3xl font-extrabold mb-6">Simulador de Economia</h2>
+                    <p class="text-slate-400 mb-8">Descubra em segundos o potencial de economia para o seu imóvel.</p>
+                    
+                    <form id="simulatorForm" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Valor mensal da conta (R$)</label>
+                            <input type="number" id="billValue" placeholder="Ex: 500" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-solarYellow transition text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Sua Cidade</label>
+                            <input type="text" placeholder="Digite sua cidade" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-solarYellow transition text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Tipo de Imóvel</label>
+                            <select class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 focus:outline-none focus:border-solarYellow transition text-white">
+                                <option>Residencial</option>
+                                <option>Comercial</option>
+                                <option>Industrial</option>
+                                <option>Rural</option>
+                            </select>
+                        </div>
+                        <button type="button" onclick="calculateSavings()" class="w-full bg-solarYellow text-darkBlue font-extrabold py-4 rounded-lg hover:brightness-110 transition shadow-lg">Calcular Agora</button>
+                    </form>
+                </div>
+                
+                <div id="resultsArea" class="lg:w-1/2 bg-slate-900 p-10 lg:p-16 flex flex-col justify-center text-white border-l border-white/10">
+                    <div id="placeholderResult" class="text-center opacity-40">
+                        <i class="fas fa-calculator text-6xl mb-4"></i>
+                        <p>Insira os dados para ver o resultado</p>
+                    </div>
+                    
+                    <div id="actualResult" class="hidden space-y-8">
+                        <div class="text-center">
+                            <span class="text-solarYellow text-sm uppercase font-bold tracking-widest">Sua Economia Estimada</span>
+                            <h3 class="text-5xl font-extrabold mt-2" id="monthlySavings">R$ 0,00</h3>
+                            <p class="text-slate-400">Mensais</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-800 p-4 rounded-xl text-center border border-white/5">
+                                <p class="text-solarYellow font-bold text-xl" id="annualSavings">R$ 0,00</p>
+                                <p class="text-xs uppercase text-slate-400">Anual</p>
+                            </div>
+                            <div class="bg-slate-800 p-4 rounded-xl text-center border border-white/5">
+                                <p class="text-solarYellow font-bold text-xl" id="longTermSavings">R$ 0,00</p>
+                                <p class="text-xs uppercase text-slate-400">Em 25 anos</p>
+                            </div>
+                        </div>
+                        <canvas id="savingChart" class="w-full h-32 bg-slate-800/50 rounded-lg mt-4"></canvas>
+                        <p class="text-[10px] text-slate-500 text-center uppercase tracking-tighter">*Valores baseados em médias tarifárias e radiação solar local.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-darkBlue mb-4">O que nossos clientes dizem</h2>
+            <div class="flex justify-center text-solarYellow space-x-1">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="p-8 border border-slate-100 rounded-3xl bg-lightGray relative">
+                <i class="fas fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                <div class="flex mb-4 text-solarYellow">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-slate-600 italic mb-6">"Minha conta caiu de R$ 800 para menos de R$ 50. O investimento se paga muito rápido!"</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-slate-300 rounded-full"></div>
+                    <div>
+                        <p class="font-bold text-darkBlue text-sm">Ricardo Mendes</p>
+                        <p class="text-xs text-slate-500">Residencial - SP</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="p-8 border border-slate-100 rounded-3xl bg-lightGray relative">
+                <i class="fas fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                <div class="flex mb-4 text-solarYellow text-xs">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-slate-600 italic mb-6">"Atendimento impecável desde o projeto até a instalação. Empresa de extrema confiança."</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-slate-300 rounded-full"></div>
+                    <div>
+                        <p class="font-bold text-darkBlue text-sm">Cláudia Oliveira</p>
+                        <p class="text-xs text-slate-500">Comercial - MG</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="p-8 border border-slate-100 rounded-3xl bg-lightGray relative">
+                <i class="fas fa-quote-right absolute top-8 right-8 text-4xl text-slate-200"></i>
+                <div class="flex mb-4 text-solarYellow text-xs">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <p class="text-slate-600 italic mb-6">"O retorno financeiro foi muito mais rápido do que imaginávamos. Recomendo fortemente a SolarMax."</p>
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-slate-300 rounded-full"></div>
+                    <div>
+                        <p class="font-bold text-darkBlue text-sm">Eng. Marcos Souza</p>
+                        <p class="text-xs text-slate-500">Indústria - PR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-24 bg-lightGray">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-4xl font-extrabold text-center text-darkBlue mb-16">Perguntas Frequentes</h2>
+            <div class="space-y-4">
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center transition hover:bg-slate-50" onclick="toggleFaq(1)">
+                        Quanto custa um sistema solar?
+                        <i id="icon-1" class="fas fa-chevron-down text-solarYellow transition-transform"></i>
+                    </button>
+                    <div id="ans-1" class="hidden p-6 pt-0 text-slate-500 border-t border-slate-100">
+                        O custo varia conforme seu consumo. Projetos residenciais médios costumam variar de 15 a 30 mil reais, com retorno do investimento entre 3 a 5 anos.
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center transition hover:bg-slate-50" onclick="toggleFaq(2)">
+                        Funciona em dias nublados?
+                        <i id="icon-2" class="fas fa-chevron-down text-solarYellow transition-transform"></i>
+                    </button>
+                    <div id="ans-2" class="hidden p-6 pt-0 text-slate-500 border-t border-slate-100">
+                        Sim! Painéis solares geram energia através da radiação solar, não do calor. Mesmo em dias nublados ou chuvosos, há geração, embora em menor intensidade.
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                    <button class="w-full text-left p-6 font-bold flex justify-between items-center transition hover:bg-slate-50" onclick="toggleFaq(3)">
+                        Precisa de manutenção?
+                        <i id="icon-3" class="fas fa-chevron-down text-solarYellow transition-transform"></i>
+                    </button>
+                    <div id="ans-3" class="hidden p-6 pt-0 text-slate-500 border-t border-slate-100">
+                        A manutenção é mínima, consistindo basicamente na limpeza periódica dos painéis com água para garantir a eficiência máxima.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-hero opacity-90"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">Comece a economizar hoje mesmo</h2>
+            <p class="text-white/80 text-xl mb-10 max-w-2xl mx-auto">Solicite uma análise gratuita e descubra quanto você pode economizar com o sol.</p>
+            <a href="#contato" class="inline-block bg-solarYellow text-darkBlue px-12 py-5 rounded-full font-extrabold text-lg hover:scale-110 transition shadow-2xl">Quero Meu Orçamento Grátis</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="bg-darkBlue pt-24 pb-12 border-t border-white/5">
+        <div class="container mx-auto px-6 grid md:grid-cols-4 gap-12 text-white">
+            <div class="col-span-2">
+                <div class="flex items-center space-x-2 mb-6">
+                    <div class="w-8 h-8 bg-solarYellow rounded flex items-center justify-center text-darkBlue font-bold text-xl">S</div>
+                    <span class="text-2xl font-extrabold tracking-tighter">SolarMax<span class="text-solarYellow">Energia</span></span>
+                </div>
+                <p class="text-slate-400 max-w-md mb-8">Líder nacional em soluções fotovoltaicas de alta performance. Tecnologia, transparência e compromisso com o seu bolso e o planeta.</p>
+                <div class="flex space-x-4 text-2xl">
+                    <a href="#" class="text-slate-400 hover:text-solarYellow transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-solarYellow transition"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-solarYellow transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-slate-400 hover:text-solarYellow transition"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold text-lg mb-6">Links Rápidos</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li><a href="#inicio" class="hover:text-solarYellow transition">Início</a></li>
+                    <li><a href="#solucoes" class="hover:text-solarYellow transition">Soluções</a></li>
+                    <li><a href="#beneficios" class="hover:text-solarYellow transition">Benefícios</a></li>
+                    <li><a href="#simulador" class="hover:text-solarYellow transition">Simulador</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-lg mb-6">Contato</h4>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-phone text-solarYellow"></i>
+                        <span>0800 123 4567</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-envelope text-solarYellow"></i>
+                        <span>contato@solarmax.com.br</span>
+                    </li>
+                    <li class="flex items-center space-x-3">
+                        <i class="fas fa-map-marker-alt text-solarYellow"></i>
+                        <span>Av. Paulista, 1000 - São Paulo, SP</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 border-t border-white/5 mt-16 pt-8 text-center text-slate-500 text-sm">
+            &copy; 2024 SolarMax Energia. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializar Animações
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Toggle FAQ Accordion
+        function toggleFaq(id) {
+            const ans = document.getElementById('ans-' + id);
+            const icon = document.getElementById('icon-' + id);
+            ans.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Lógica do Simulador
+        function calculateSavings() {
+            const bill = document.getElementById('billValue').value;
+            if(!bill || bill <= 0) {
+                alert("Por favor, informe um valor de conta válido.");
+                return;
+            }
+
+            const placeholder = document.getElementById('placeholderResult');
+            const results = document.getElementById('actualResult');
+            
+            placeholder.classList.add('hidden');
+            results.classList.remove('hidden');
+
+            const monthly = bill * 0.95;
+            const annual = monthly * 12;
+            const longTerm = annual * 25;
+
+            document.getElementById('monthlySavings').innerText = 'R$ ' + monthly.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+            document.getElementById('annualSavings').innerText = 'R$ ' + annual.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+            document.getElementById('longTermSavings').innerText = 'R$ ' + longTerm.toLocaleString('pt-BR', { minimumFractionDigits: 2 });
+        }
+
+        // Header Background on Scroll
+        window.onscroll = function() {
+            const header = document.querySelector('header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        };
+    </script>
+</body>
+</html>
