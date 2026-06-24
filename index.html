@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyTech — Sites profissionais</title>
+
+  <meta name="description" content="PyTech: desenvolvimento de sites profissionais e landing pages com design moderno, entrega rápida e foco em conversão para empresas e empreendedores." />
+  <meta name="theme-color" content="#031B4E" />
+
+  <meta property="og:title" content="PyTech — Desenvolvimento Web Profissional" />
+  <meta property="og:description" content="Sites profissionais para empresas e empreendedores. Design moderno, entrega rápida e foco em conversão." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (corrigido) -->
+  <link rel="icon" type="image/png" href="./images/logodecima.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+  <!-- Background decor -->
+  <div class="bg-decor" aria-hidden="true">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+
+      <a href="#hero" class="logo" aria-label="PyTech início">
+        <img src="./images/logo-pytech.png" alt="PyTech Desenvolvimento Web" class="logo-img" width="160" height="48" />
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#contato" class="btn btn-primary btn-sm">Solicitar Orçamento</a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+          <span class="badge"><span class="dot"></span> Desenvolvimento Web Premium</span>
+
+          <h1>Sites Profissionais para Empresas e Empreendedores</h1>
+
+          <p>Desenvolvimento rápido, design moderno e foco em conversão.</p>
+
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+            <a href="https://wa.me/5531971653823" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <img src="./images/hero-mockup.png" alt="Mockup do site PyTech" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+      <div class="container">
+        <h2>Sobre a PyTech</h2>
+
+        <img src="./images/developer.png" alt="Desenvolvedor PyTech" />
+
+        <p>Meu nome é Pietro e desenvolvo sites modernos e funcionais.</p>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio">
+      <div class="container">
+        <h2>Projetos</h2>
+
+        <div>
+          <img src="./images/projeto-01.png" />
+          <a href="./projetos/projeto-03/">Visitar</a>
+        </div>
+
+        <div>
+          <img src="./images/projeto-02.png" />
+          <a href="./projetos/projeto-01/">Visitar</a>
+        </div>
+
+        <div>
+          <img src="./images/projeto-03.png" />
+          <a href="./projetos/projeto-02/">Visitar</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="container">
+        <h2>Contato</h2>
+
+        <a href="https://wa.me/5531971653823">Falar no WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; PyTech</p>
+  </footer>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
